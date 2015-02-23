@@ -1,5 +1,8 @@
-all:	primes.c
-	gcc -o primes primes.c
+primesc: primes.c
+	gcc -o PrimesC primes.c
+
+primescpp: PrimesMain.cpp Primes.cpp
+	g++ PrimesMain.cpp Primes.cpp -o PrimesCpp
 
 clean:
-	rm -f primes
+	rm -f PrimesC PrimesCpp
