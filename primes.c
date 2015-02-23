@@ -27,7 +27,8 @@ struct primesList *createList(int prime)
 struct primesList *addToList(int prime)
 {
     //if no list created, create it and return created list
-    if(head == NULL){
+    if(head == NULL)
+    {
         return createList(prime);
     }
 
@@ -47,12 +48,20 @@ int isPrimeNumber(int n)
 {
     int isPrime = 1;
     int i;
-    for(i = 2; i < n; i++)
+    if(n !=1)
     {
-        if(n % i == 0){
-            isPrime = 0;
-            break;
+        for(i = 2; i < n; i++)
+        {
+            if(n % i == 0)
+            {
+                isPrime = 0;
+                break;
+            }
         }
+    }
+    else
+    {
+        isPrime = 0;
     }
 
     return isPrime;
@@ -85,7 +94,8 @@ int main()
         }
 
         isPrime = isPrimeNumber(n);
-        if(isPrime == 1){
+        if(isPrime == 1)
+        {
             addToList(n);
         }
     }

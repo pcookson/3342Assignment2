@@ -9,12 +9,20 @@ bool Primes::isPrimeNumber(int n)
 {
     bool isPrime = true;
     int i;
-    for(i = 2; i < n; i++)
+    if(n !=1)
     {
-        if(n % i == 0){
-            isPrime = false;
-            break;
+        for(i = 2; i < n; i++)
+        {
+            if(n % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
         }
+    }
+    else
+    {
+        isPrime = false;
     }
 
     return isPrime;

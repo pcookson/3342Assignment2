@@ -1,10 +1,12 @@
 def prime(numInt):
 	isPrime = True
-	
-	for x in range(2,numInt):
-		if numInt % x == 0:
-			isPrime = False
-			break
+	if numInt != 1:
+		for x in range(2,numInt):
+			if numInt % x == 0:
+				isPrime = False
+				break
+	else:
+		isPrime = False
 	return isPrime	
 	
 def print_primes(primes):

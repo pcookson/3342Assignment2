@@ -1,10 +1,14 @@
 def prime(numInt)
 	isPrime = true
-	for x in 2..numInt-1
-		if numInt % x == 0 then
-			isPrime = false
-			break
+	if numInt !=1 then
+		for x in 2..numInt-1
+			if numInt % x == 0 then
+				isPrime = false
+				break
+			end
 		end
+	else
+		isPrime = false
 	end
 	return isPrime	
 end
