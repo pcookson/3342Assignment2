@@ -1,6 +1,16 @@
 C: gcc - developed in Code::Blocks
+   run make primesc. Creates executible called PrimesC
+
 C++: g++ - developed in Code::Blocks
+     run make primescpp. Creates executible calld PrimesCpp
+
 Python: 2.7x - developed in Geany
+     run python primes.py
+
 Ruby: 1.9.3 - developed in Geany
-C#: Mono 3.2.8.0 - developed in mono-develop
+     run ruby primes.py
+
+C#: mcs 3.12.0.0 - developed in mono-develop
+    compile mcs Primes.cs
+    Creates executible called Primes.exe
 
