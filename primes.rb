@@ -14,7 +14,7 @@ def prime(numInt)
 end
 
 def printPrimes(primes)
-	puts "Primes are: "
+	puts "\nPrimes are: "
 	primes.each do |i|
 		puts i
 	end

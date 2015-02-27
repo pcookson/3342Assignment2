@@ -30,6 +30,7 @@ bool Primes::isPrimeNumber(int n)
 
 void Primes::printPrimes(std::vector<int> &primeVector)
 {
+    std::cout << "\nPrimes are: " << std::endl;
     for(std::vector<int>::iterator it = primeVector.begin(); it != primeVector.end(); ++it)
     {
         std::cout << *it << "\n";

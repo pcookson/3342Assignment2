@@ -11,6 +11,7 @@ namespace Application
 		}
 
 		public void printPrimes(List<int> primes){
+			Console.WriteLine ("\nPrimes are: ");
 			foreach (int i in primes) {
 				Console.WriteLine (i);
 			}

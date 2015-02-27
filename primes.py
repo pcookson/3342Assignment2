@@ -10,7 +10,7 @@ def prime(numInt):
 	return isPrime	
 	
 def print_primes(primes):
-		print "primes are: "
+		print "\nPrimes are: "
 		for p in primes:
 			print p
  
